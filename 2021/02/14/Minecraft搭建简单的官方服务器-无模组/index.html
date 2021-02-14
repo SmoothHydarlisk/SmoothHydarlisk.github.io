@@ -25,18 +25,25 @@
     var NexT = window.NexT || {};
     var CONFIG = {"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","version":"8.2.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":false,"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"搜索...","empty":"没有找到任何搜索结果：${query}","hits_time":"找到 ${hits} 个搜索结果（用时 ${time} 毫秒）","hits":"找到 ${hits} 个搜索结果"}};
   </script>
-<meta name="description" content="主要用于个人学习时记录笔记,并分享一些自己认为有用的东西方便自己和朋友观看">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Hydarlisk&#39;s blog">
-<meta property="og:url" content="http://example.com/archives/2021/index.html">
+<meta name="description" content="前言Minecreaft作为一个全球发售量最高的游戏乐趣无穷，但上百的价格让大部分玩家只得选择非正版游玩，这样一来各位与基友开黑时会面临许多困难。本篇文章将帮助各位小白（我也是老小白了）搭建一个Minecraft服务器，其实过程十分简单,各位能与基友高兴的玩耍。 获取Minecraft官方服务端 Minecraft官网有提供给玩家的服务端，不过一般只提供最新版本。若想游玩旧版本可以通过其他渠道下载">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Minecraft搭建简单的官方服务器(无模组)">
+<meta property="og:url" content="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/index.html">
 <meta property="og:site_name" content="Hydarlisk&#39;s blog">
-<meta property="og:description" content="主要用于个人学习时记录笔记,并分享一些自己认为有用的东西方便自己和朋友观看">
+<meta property="og:description" content="前言Minecreaft作为一个全球发售量最高的游戏乐趣无穷，但上百的价格让大部分玩家只得选择非正版游玩，这样一来各位与基友开黑时会面临许多困难。本篇文章将帮助各位小白（我也是老小白了）搭建一个Minecraft服务器，其实过程十分简单,各位能与基友高兴的玩耍。 获取Minecraft官方服务端 Minecraft官网有提供给玩家的服务端，不过一般只提供最新版本。若想游玩旧版本可以通过其他渠道下载">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/image/1.png">
+<meta property="og:image" content="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/image/2.png">
+<meta property="og:image" content="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/image/3.png">
+<meta property="article:published_time" content="2021-02-14T10:46:10.000Z">
+<meta property="article:modified_time" content="2021-02-14T14:46:21.109Z">
 <meta property="article:author" content="Hydarlisk">
+<meta property="article:tag" content="games">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/image/1.png">
 
 
-<link rel="canonical" href="http://example.com/archives/2021/">
+<link rel="canonical" href="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/">
 
 
 <script class="page-configurations">
@@ -44,11 +51,11 @@
   CONFIG.page = {
     sidebar: "",
     isHome : false,
-    isPost : false,
+    isPost : true,
     lang   : 'zh-CN'
   };
 </script>
-<title>归档 | Hydarlisk's blog</title>
+<title>Minecraft搭建简单的官方服务器(无模组) | Hydarlisk's blog</title>
   
 
 
@@ -147,7 +154,7 @@
 
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           文章目录
@@ -160,6 +167,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#%E5%89%8D%E8%A8%80"><span class="nav-number">1.</span> <span class="nav-text">前言</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%8E%B7%E5%8F%96Minecraft%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-number">2.</span> <span class="nav-text">获取Minecraft官方服务端</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E6%9C%8D%E5%8A%A1%E7%AB%AF"><span class="nav-number">3.</span> <span class="nav-text">运行服务端</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#%E5%90%8E%E7%BB%AD%E5%86%85%E5%AE%B9%E7%AD%89%E5%BE%85%E6%9B%B4%E6%96%B0"><span class="nav-number">3.0.1.</span> <span class="nav-text">后续内容等待更新</span></a></li></ol></li></ol></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -216,69 +224,100 @@
 </noscript>
 
 
-    <div class="main-inner archive posts-collapse">
+    <div class="main-inner post posts-expand">
 
 
   
-  
-  
-  <div class="post-block">
-    <div class="post-content">
-      <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 2 篇日志。 继续努力。</span>
-      </div>
 
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hydarlisk">
+      <meta itemprop="description" content="主要用于个人学习时记录笔记,并分享一些自己认为有用的东西方便自己和朋友观看">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hydarlisk's blog">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          Minecraft搭建简单的官方服务器(无模组)
+        </h1>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
       
-    <div class="collection-year">
-      <span class="collection-header">2021</span>
+
+      <time title="创建时间：2021-02-14 18:46:10 / 修改时间：22:46:21" itemprop="dateCreated datePublished" datetime="2021-02-14T18:46:10+08:00">2021-02-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/Minecraft/" itemprop="url" rel="index"><span itemprop="name">Minecraft</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+        <h3 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h3><p>Minecreaft作为一个全球发售量最高的游戏乐趣无穷，但上百的价格让大部分玩家只得选择非正版游玩，这样一来各位与基友开黑时会面临许多困难。本篇文章将帮助各位小白（我也是老小白了）搭建一个Minecraft服务器，其实过程十分简单,各位能与基友高兴的玩耍。</p>
+<h3 id="获取Minecraft官方服务端"><a href="#获取Minecraft官方服务端" class="headerlink" title="获取Minecraft官方服务端"></a>获取Minecraft官方服务端</h3><p> Minecraft官网有提供给玩家的服务端，不过一般只提供最新版本。若想游玩旧版本可以通过其他渠道下载，这里介绍一种歪门邪道的方法，博主经常采用这种方法去获取难以下载的游戏mod。</p>
+<p> 我们可以在mcbbs的服务端版块中下载相对应的服务端整合包，在下载完成后我们打开整合包文件夹（一般下载的是压缩包，解压即可）可以看到里面有一个minecraft_serverXXXX的.jar文件这就是minecraft的官方服务端（如果你下载的是mod服务端整合包还会有其他.jar文件，不用管他们）<br> <img src="image/1.png"></p>
+<h3 id="运行服务端"><a href="#运行服务端" class="headerlink" title="运行服务端"></a>运行服务端</h3><p> 拿到文件后外面新建文件夹,讲该文件移到新的文件中像这样<br> <img src="image/2.png"><br> 我们在这里新建一个.bat的文件,用记事本打开输入下列命令<br> <code>java -Xmx1024M -Xms1024M -jar minecraft_server.XXX.jar nogui</code><br> 其中<code>minecraft_server.XXX.jar</code>是服务端文件的名称。</p>
+<p> 完成编辑并保存双击我们编辑的文件。第一次运行一般会出现这种情况<br> <img src="image/3.png"><br> 然后我们的文件夹种会生成一些文件,我们找到eula.txt文件打开后将<code>eula=false</code>改成<code>eula=true</code>保存退出,重新双击文件,等待黑框不在输出语句,并出现<code>Done!XXX</code>的时候就说明我们开服成功了</p>
+<h5 id="后续内容等待更新"><a href="#后续内容等待更新" class="headerlink" title="后续内容等待更新"></a>后续内容等待更新</h5>
     </div>
 
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-02-14T18:46:10+08:00"
-              content="2021-02-14">
-          02-14
-        </time>
-      </div>
+    
+    
+    
 
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/02/14/Minecraft%E6%90%AD%E5%BB%BA%E7%AE%80%E5%8D%95%E7%9A%84%E5%AE%98%E6%96%B9%E6%9C%8D%E5%8A%A1%E5%99%A8-%E6%97%A0%E6%A8%A1%E7%BB%84/" itemprop="url">
-            <span itemprop="name">Minecraft搭建简单的官方服务器(无模组)</span>
-          </a>
-      </div>
+    <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/games/" rel="tag"># games</a>
+          </div>
 
-      
-    </header>
+        
+
+          <div class="post-nav">
+            <div class="post-nav-item">
+                <a href="/2021/02/13/hello-world/" rel="prev" title="Hello World">
+                  <i class="fa fa-chevron-left"></i> Hello World
+                </a>
+            </div>
+            <div class="post-nav-item">
+            </div>
+          </div>
+    </footer>
   </article>
-
-  <article itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-      <div class="post-meta-container">
-        <time itemprop="dateCreated"
-              datetime="2021-02-13T00:57:19+08:00"
-              content="2021-02-13">
-          02-13
-        </time>
-      </div>
-
-      <div class="post-title">
-          <a class="post-title-link" href="/2021/02/13/hello-world/" itemprop="url">
-            <span itemprop="name">Hello World</span>
-          </a>
-      </div>
-
-      
-    </header>
-  </article>
+</div>
 
 
-    </div>
-  </div>
-  
-  
-  
+
+
+
 
 
 <script>
