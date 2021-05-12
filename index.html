@@ -175,20 +175,20 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">6</span>
+          <span class="site-state-item-count">7</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
       <div class="site-state-item site-state-categories">
             <a href="/categories/">
           
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">3</span>
         <span class="site-state-item-name">分类</span></a>
       </div>
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">7</span>
+        <span class="site-state-item-count">8</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -217,6 +217,105 @@
 
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2021/05/12/c-STL%E8%AF%AD%E6%B3%95%E9%9B%86%E5%90%88/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.png">
+      <meta itemprop="name" content="Hydarlisk">
+      <meta itemprop="description" content="主要用于个人学习时记录笔记,并分享一些自己认为有用的东西方便自己和朋友观看">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Hydarlisk's blog">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2021/05/12/c-STL%E8%AF%AD%E6%B3%95%E9%9B%86%E5%90%88/" class="post-title-link" itemprop="url">C++_STL语法集合</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">发表于</span>
+      
+
+      <time title="创建时间：2021-05-12 19:19:54 / 修改时间：19:49:38" itemprop="dateCreated datePublished" datetime="2021-05-12T19:19:54+08:00">2021-05-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">分类于</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E5%B7%A5%E5%85%B7%E6%96%87%E6%A1%A3/" itemprop="url" rel="index"><span itemprop="name">工具文档</span></a>
+        </span>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="总述"><a href="#总述" class="headerlink" title="总述"></a>总述</h1><p>本文主要收集笔者经常忘掉的c++语法，<strong>内容会不断更新</strong></p>
+<h2 id="C-STL"><a href="#C-STL" class="headerlink" title="C++_STL"></a>C++_STL</h2><h3 id="queue"><a href="#queue" class="headerlink" title="queue"></a>queue</h3><ul>
+<li><p><code>priority_queue&lt;&gt;</code> 优先队列—–<em>堆</em></p>
+<ul>
+<li><p>方法:</p>
+<ul>
+<li>top访问队头元素</li>
+<li>empty队列是否为空</li>
+<li>size返回队列内元素个数</li>
+<li>push插入元素到对位(并排序)</li>
+<li>emplace原地构造一个元素并插入队列</li>
+<li>pop弹出队头元素</li>
+<li>swap交换内容</li>
+</ul>
+</li>
+<li><p>特点:</p>
+<ul>
+<li><p>小根堆</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">priority_queue</span> &lt;<span class="keyword">int</span>,<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;,greater&lt;<span class="keyword">int</span>&gt; &gt; q;</span><br></pre></td></tr></table></figure></li>
+<li><p>大根堆</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">priority_queue</span> &lt;<span class="keyword">int</span>,<span class="built_in">vector</span>&lt;<span class="keyword">int</span>&gt;,less&lt;<span class="keyword">int</span>&gt; &gt;q;</span><br></pre></td></tr></table></figure></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
